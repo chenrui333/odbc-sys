@@ -11,6 +11,11 @@ keywords = ["sql","database","odbc","ffi"]
 build = "build.rs"
 categories = ["external-ffi-bindings", "database"]
 
+# Links libodbc.so on linux and OS-X with unix-odbc
+# Links odbc32.dll on windows
+# Links libiodbc.so on OS-X if iodbc feature is activated
+links="odbc"
+
 [dependencies]
 
 [features]
